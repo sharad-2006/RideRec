@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bike Recommendation System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #0055a5;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003e7e;
+        }
+        .query-box {
+            background-color: #f0f8ff;
+            border: 1px solid #cce0ff;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin-top: 25px;
+            color: #003366;
+            font-size: 16px;
+        }
+        .query-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .results {
+            margin-top: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #e6f0ff;
+            color: #003366;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bike Recommendation System</h1>
+
+        <form method="POST">
+            <label for="query">Describe your ideal bike:</label>
+            <input type="text" id="query" name="query" placeholder="e.g. affordable city bike" value="{{ query }}" required>
+
+            <label for="engine_cc">Preferred Engine CC (or type 'cc' to ignore):</label>
+            <input type="text" id="engine_cc" name="engine_cc" placeholder="e.g. 1000" value="{{ engine_cc_input }}">
+
+            <label for="price">Preferred Price in ₹ (or type 'price' to ignore):</label>
+            <input type="text" id="price" name="price" placeholder="e.g. 1200000" value="{{ price_input }}">
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        {% if form_submitted %}
+        <div class="query-box">
+            <div class="query-title">Query:</div>
+            <div><strong>Description:</strong> {{ query or "Not specified" }}</div>
+            <div><strong>Preferred Engine CC:</strong> {{ engine_cc_input if engine_cc_input else "Not specified" }}</div>
+            <div><strong>Preferred Price:</strong> {{ price_input if price_input else "Not specified" }}</div>
+        </div>
+        {% endif %}
+
+        {% if top_bikes is not none %}
+        <div class="results">
+            <h2>Top Recommended Bikes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Engine CC</th>
+                        <th>Price</th>
+                        <th>Final Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for bike in top_bikes.itertuples() %}
+                    <tr>
+                        <td>{{ bike.brand }}</td>
+                        <td>{{ bike.model }}</td>
+                        <td>{{ bike.engine_cc }} cc</td>
+                        <td>{{ bike.price }}</td>
+                        <td>{{ bike.final_score }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

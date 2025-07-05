@@ -1,0 +1,49 @@
+bike_id,brand,model,engine_cc,description,price
+1,Honda,CBR500R,471,Sporty Powerful motorcycle with smooth power delivery | Japanese | Sport,780768
+2,Yamaha,MT-03,321,Lightweight urban streetfighter with sharp styling | Japanese | Naked,510462
+3,Kawasaki,Ninja 400,399,Beginner-friendly sport bike with aggressive looks | Japanese | Sport,585048
+4,Bajaj,Dominar 400,373,Powerful yet affordable touring-friendly bike | Indian | Touring,325260
+5,KTM,Duke 390,373,Naked bike with sharp handling and lightweight design | Austrian | Naked,379460
+6,TVS,Apache RR 310,312,Entry-level faired sportbike with aerodynamic design | Indian | Sport,390931
+7,Royal Enfield,Hunter 350,349,Retro - style city cruiser with modern features | Indian | Cruiser,206166
+8,Suzuki,SV650,645,Versatile middleweight bike with V-twin engine | Japanese | Naked,780768
+9,Yamaha,MT-07,689,Popular naked bike with torquey performance | Japanese | Naked,846252
+10,Honda,CB650R,649,Neo-sports Track Ready with inline-four engine | Japanese | Sport,976620
+11,BMW,G310R,313,Compact roadster with German precision and build quality | German | Naked,530682
+12,Kawasaki,Versys 650,649,Adventure tourer for city and highway comfort | Japanese | Touring,889752
+13,Ducati,Monster 797,803,Iconic naked bike with Italian styling | Italian | Naked,1249878
+14,Triumph,Trident 660,660,Triple-cylinder roadster with balanced performance | British | Naked,880962
+15,KTM,Adventure 390,373,Lightweight adventure bike with long travel suspension | Austrian | Adventure,564936
+16,Honda,Africa Twin 1100,1084,Legendary adventure bike for long-distance riding | Japanese | Adventure,1572600
+17,BMW,S1000RR,999,Superbike with electronic rider aids and track performance | German | Sport,1952280
+18,Suzuki,Hayabusa,1340,High-speed sport touring legend with unmatched power | Japanese | Sport,2064180
+19,Yamaha,YZF-R1,998,Flagship supersport built for speed and control | Japanese | Sport,1840140
+20,Kawasaki,Ninja ZX-6R,636,Middleweight supersport with racing DNA | Japanese | Sport,1107540
+21,Ducati,Panigale V2,955,Track-ready sportbike with Italian design | Italian | Sport,1826904
+22,KTM,RC 390,373,Track-focused sportbike for serious enthusiasts | Austrian | Sport,630324
+23,Ninja, H2R,998 ,Track Focused High speed supersport| Japanese|sport|,8000000
+24,Honda,CBR650R,649,Inline-four sportbike with sharp styling and smooth power | Japanese | Sport,950000
+25,Yamaha,R7,689,Middleweight supersport with excellent cornering performance | Japanese | Sport,1100000
+26,Kawasaki,Z900RS,948,Retro-inspired naked bike with modern technology | Japanese | Naked,1020000
+27,BMW,R18,1802,Luxurious cruiser with classic German craftsmanship | German | Cruiser,1950000
+28,Royal Enfield,Super Meteor 650,648,Relaxed cruiser with twin-cylinder power and touring comfort | Indian | Cruiser,375000
+29,Triumph,Bonneville Bobber,1200,Iconic British cruiser with timeless design | British | Cruiser,1300000
+30,Honda,Gold Wing Tour,1833,Premium touring motorcycle with unmatched luxury | Japanese | Cruiser,3200000
+31,KTM,RC8C,889,Track-focused supersport for serious performance riders | Austrian | Sport,2500000
+32,Suzuki,GSX-S1000,999,Aggressive naked bike with liter-class performance | Japanese | Naked,1250000
+33,Harley-Davidson,Fat Boy 114,1868,Legendary American cruiser with muscular styling | American | Cruiser,2000000
+34,Honda,Shadow Phantom,745,Low-slung cruiser with easy handling and reliability | Japanese | Cruiser,820000
+35,Yamaha,Star Venture,1854,Large displacement luxury cruiser for long-distance touring | Japanese | Cruiser,2850000
+36,Ducati,SuperSport 950,937,Versatile Italian sportbike for road and track | Italian | Sport,1450000
+37,Aprilia,RSV4 1100 Factory,1077,Flagship Italian superbike with V4 engine and cutting-edge tech | Italian | Sport,3000000
+38,Kawasaki,Mean Streak 1600,1552,Power cruiser with aggressive looks and strong torque | Japanese | Cruiser,1400000
+39,BMW,K1600B,1649,High-tech bagger cruiser for ultimate comfort | German | Cruiser,2700000
+40,KTM,RC 8C GP,889,Race-spec supersport with ultralight chassis and premium components | Austrian | Sport,2650000
+41,Yamaha,MT-10,998,Hyper naked bike with crossplane engine and aggressive styling | Japanese | Naked,1420000
+42,Ducati,Diavel V4,1158,Italian power cruiser with sporty DNA and cutting-edge tech | Italian | Cruiser,2200000
+43,Suzuki,GSX-R1000R,999,Flagship supersport with razor-sharp handling and speed | Japanese | Sport,1950000
+44,Bajaj,Pulsar 220F,220,Popular city bike with semi-faired design and reliable performance | Indian | Naked,135000
+45,Yamaha,FZ-S V3,149,Urban commuter with refined engine and modern styling | Japanese | Naked,120000
+46,Honda,Hornet 2.0,184,Aggressive streetfighter with smooth power delivery | Japanese | Naked,135000
+47,TVS,Apache RTR 200 4V,197,Versatile city bike with sporty looks and refined engine | Indian | Naked,140000
+48,Suzuki,Gixxer SF 250,249,Fully faired commuter-friendly sportbike with efficient engine | Japanese | Sport,195000
